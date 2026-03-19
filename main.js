@@ -1,5 +1,3 @@
-import './style.css'
-
 const lessons = [
   {
     id: 'lift',
