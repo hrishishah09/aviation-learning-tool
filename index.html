@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aviation Ground School Trainer</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="header">
+        <div class="header-content">
+          <h1 class="app-title">Aviation Ground School</h1>
+          <p class="app-subtitle">Learn the fundamentals of flight</p>
+        </div>
+        <nav class="nav-tabs">
+          <button class="nav-btn active" data-section="learn">Learn</button>
+          <button class="nav-btn" data-section="practice">Practice</button>
+        </nav>
+      </header>
+
+      <main class="main-content">
+
+        <section id="learn-section" class="section active">
+          <div class="section-header">
+            <h2>Ground School Curriculum</h2>
+            <p class="section-description">Learn the fundamentals of aviation and flight dynamics</p>
+          </div>
+
+          <div class="lessons-container">
+            <div class="lessons-list" id="lessons-list">
+            </div>
+
+            <div class="lesson-detail" id="lesson-detail">
+              <div class="lesson-content">
+                <h3 id="lesson-title"></h3>
+                <div id="lesson-text" class="lesson-text"></div>
+                <div class="concepts-box">
+                  <h4>Key Concepts</h4>
+                  <ul id="concepts-list" class="concepts-list"></ul>
+                </div>
+              </div>
+              <div class="lesson-nav">
+                <button id="prev-lesson-btn" class="nav-btn-secondary">Previous</button>
+                <span id="lesson-counter" class="lesson-counter"></span>
+                <button id="next-lesson-btn" class="nav-btn-secondary">Next</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="practice-section" class="section">
+          <div class="section-header">
+            <h2>Flight Scenarios</h2>
+            <p class="section-description">Apply what you've learned by making decisions in realistic flight situations</p>
+          </div>
+
+          <div class="practice-container">
+            <div class="score-box">
+              <span class="score-label">Score:</span>
+              <span id="score-display" class="score-value">0 / 0</span>
+              <button id="reset-score-btn" class="reset-btn">Reset</button>
+            </div>
+
+            <div class="scenario-container" id="scenario-container">
+              <div class="scenario-header">
+                <h3 id="scenario-title"></h3>
+                <span id="related-lesson" class="related-lesson"></span>
+              </div>
+
+              <div class="scenario-situation">
+                <p id="situation-text"></p>
+              </div>
+
+              <div class="choices-container" id="choices-container">
+              </div>
+
+              <div id="feedback-container" class="feedback-container hidden">
+                <div class="feedback-box">
+                  <div id="feedback-result" class="feedback-result"></div>
+                  <div id="feedback-text" class="feedback-text"></div>
+                </div>
+                <button id="next-scenario-btn" class="nav-btn-secondary">Next Scenario</button>
+              </div>
+            </div>
+
+            <div class="scenario-nav">
+              <span id="scenario-counter" class="scenario-counter"></span>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
