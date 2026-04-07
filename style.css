@@ -203,6 +203,101 @@ body {
   border-color: var(--color-blue);
 }
 
+.week-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.week-header {
+  padding: var(--spacing-md);
+  border: 2px solid var(--color-blue);
+  background: var(--color-blue);
+  color: var(--color-white);
+  text-align: left;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  font-size: 0.95rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.week-header::after {
+  content: '▼';
+  font-size: 0.75rem;
+  transition: transform 0.3s ease;
+}
+
+.week-header.expanded::after {
+  transform: rotate(180deg);
+}
+
+.week-header:hover {
+  background: var(--color-blue-dark);
+  border-color: var(--color-blue-dark);
+}
+
+.sublessons-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  padding-left: var(--spacing-md);
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 500px;
+  }
+}
+
+.sublesson-btn {
+  padding: var(--spacing-md);
+  border: 2px solid var(--color-grey-medium);
+  background: var(--color-white);
+  color: var(--color-navy);
+  text-align: left;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding-left: var(--spacing-lg);
+  position: relative;
+}
+
+.sublesson-btn::before {
+  content: '→';
+  position: absolute;
+  left: var(--spacing-md);
+  color: var(--color-grey-dark);
+  transition: all 0.3s ease;
+}
+
+.sublesson-btn:hover {
+  border-color: var(--color-blue);
+  background: var(--color-grey-light);
+  padding-left: calc(var(--spacing-lg) + 4px);
+}
+
+.sublesson-btn.active {
+  background: var(--color-blue-light);
+  color: var(--color-white);
+  border-color: var(--color-blue);
+}
+
+.sublesson-btn.active::before {
+  color: var(--color-white);
+}
+
 .lesson-detail {
   background: var(--color-white);
   padding: var(--spacing-2xl);
@@ -542,14 +637,19 @@ body {
   }
 
   .lessons-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    display: flex;
+    flex-direction: column;
     gap: var(--spacing-md);
   }
 
-  .lesson-btn {
+  .week-header {
     padding: var(--spacing-md);
     font-size: 0.9rem;
+  }
+
+  .sublesson-btn {
+    padding: var(--spacing-md);
+    font-size: 0.85rem;
   }
 
   .lesson-detail {
