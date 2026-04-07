@@ -1,101 +1,252 @@
 const lessons = [
   {
-    id: 'week-1',
-    title: 'Week 1: Introduction & Air Law 1',
+    id: 'module-1',
+    title: 'Foundations of Aviation',
     sublessons: [
-      { id: 'intro-ngsp', title: 'Introduction to NGSP', content: '', concepts: [] },
-      { id: 'intro-air-law', title: 'Intro to Air Law', content: '', concepts: [] },
-      { id: 'terminology-atc', title: 'Terminology & ATC Comms', content: '', concepts: [] },
-      { id: 'parts-aircraft', title: 'Parts of an Aircraft', content: '', concepts: [] },
-      { id: 'intro-theory-flight', title: 'Introduction to Theory of Flight', content: '', concepts: [] }
+      {
+        id: 'intro-air-law',
+        title: 'Introduction to Air Law & Regulations',
+        content: 'Aviation is heavily regulated to ensure safety. In Canada, civil aviation is governed by Transport Canada through the Canadian Aviation Regulations (CARs). Pilots must carry valid documentation at all times, including their License or Permit, a valid Medical Certificate, and proof of identification. The type of medical certificate required depends on the license type (e.g., Category 1 for Commercial, Category 3 for Private Pilot). Understanding your privileges and limitations as a pilot is your legal responsibility before taking command of any aircraft.',
+        concepts: ['Transport Canada', 'CARs', 'Medical Certificates', 'Pilot Privileges'],
+        image: 'https://images.unsplash.com/photo-1540962351504-03099e0a754b'
+      },
+      {
+        id: 'aviation-terminology',
+        title: 'Aviation Terminology & Communications',
+        content: 'Clear communication is critical in aviation. Pilots and Air Traffic Control (ATC) use the ICAO Phonetic Alphabet (Alpha, Bravo, Charlie...) to avoid misunderstandings over the radio. Aviation operates on a universal time standard called Coordinated Universal Time (UTC), often referred to as \'Zulu Time\', ensuring all flight plans and weather reports share the same timeline regardless of local time zones. Furthermore, it\'s vital to know the difference between an Aerodrome (any area used for aircraft operations) and an Airport (an aerodrome with a certified status).',
+        concepts: ['Phonetic Alphabet', 'Zulu Time', 'Aerodrome vs Airport', 'ATC Clearances'],
+        image: ''
+      },
+      {
+        id: 'anatomy-aircraft',
+        title: 'Anatomy of an Aircraft',
+        content: 'An aircraft is divided into several major components. The Fuselage is the main body that holds the crew, passengers, and cargo. The Wings generate the lift required for flight and often contain the fuel tanks. The Empennage (tail section) provides stability and control, consisting of the vertical stabilizer (rudder) and horizontal stabilizer (elevator). The Landing Gear supports the aircraft on the ground, and the Propulsion System (engine and propeller) generates the thrust needed to move forward.',
+        concepts: ['Fuselage', 'Empennage', 'Landing Gear', 'Ailerons, Elevators, Rudder'],
+        image: 'https://images.unsplash.com/photo-1559080463-5c7eb3a52de1'
+      },
+      {
+        id: 'intro-theory-flight',
+        title: 'Introduction to Theory of Flight',
+        content: 'Flight is governed by physical laws, most notably Newton\'s Third Law (for every action, there is an equal and opposite reaction) and Bernoulli\'s Principle (as the velocity of a fluid increases, its pressure decreases). There are four fundamental forces acting on an aircraft in flight: Lift (upward), Weight (downward), Thrust (forward), and Drag (backward). In steady, unaccelerated flight, Lift equals Weight, and Thrust equals Drag. The shape of the wing, called an airfoil, is specifically designed to manipulate these air pressure differences to generate lift.',
+        concepts: ['Bernoulli\'s Principle', 'Newton\'s Third Law', 'The Four Forces', 'Airfoils'],
+        image: ''
+      }
     ]
   },
   {
-    id: 'week-2',
-    title: 'Week 2: Air Law 2 & Theory of Flight',
+    id: 'module-2',
+    title: 'Advanced Air Law & Aerodynamics',
     sublessons: [
-      { id: 'licensing-docs', title: 'Licensing & Documentation', content: '', concepts: [] },
-      { id: 'aerodromes-1', title: 'Aerodromes 1', content: '', concepts: [] },
-      { id: 'laws-forces', title: 'Laws and Forces', content: '', concepts: [] },
-      { id: 'lift-drag', title: 'Lift and Drag', content: '', concepts: [] }
+      {
+        id: 'licensing-docs',
+        title: 'Licensing & Documentation',
+        content: '',
+        concepts: [],
+        image: ''
+      },
+      {
+        id: 'aerodromes-part-1',
+        title: 'Aerodromes: Part 1',
+        content: '',
+        concepts: [],
+        image: ''
+      },
+      {
+        id: 'laws-forces',
+        title: 'Physical Laws and Forces',
+        content: '',
+        concepts: [],
+        image: ''
+      },
+      {
+        id: 'lift-drag',
+        title: 'Lift and Drag Dynamics',
+        content: '',
+        concepts: [],
+        image: ''
+      }
     ]
   },
   {
-    id: 'week-3',
-    title: 'Week 3: Aerodromes & Airspace',
+    id: 'module-3',
+    title: 'Airspace & Pilot Health',
     sublessons: [
-      { id: 'aerodromes-2', title: 'Aerodromes 2', content: '', concepts: [] },
-      { id: 'vfr-conditions', title: 'VFR Flight Conditions', content: '', concepts: [] },
-      { id: 'airspace', title: 'Airspace', content: '', concepts: [] },
-      { id: 'aeromedical-1', title: 'Aeromedical 1', content: '', concepts: [] }
+      {
+        id: 'aerodromes-part-2',
+        title: 'Aerodromes: Part 2',
+        content: '',
+        concepts: [],
+        image: ''
+      },
+      {
+        id: 'vfr-flight-conditions',
+        title: 'VFR Flight Conditions & Airspace',
+        content: '',
+        concepts: [],
+        image: ''
+      },
+      {
+        id: 'aviation-medicine',
+        title: 'Aviation Medicine & Human Factors',
+        content: '',
+        concepts: [],
+        image: ''
+      }
     ]
   },
   {
-    id: 'week-4',
-    title: 'Week 4: Rules & Aeromedical',
+    id: 'module-4',
+    title: 'Procedures & Operations',
     sublessons: [
-      { id: 'rules-air', title: 'Rules of the Air', content: '', concepts: [] },
-      { id: 'maintenance', title: 'Maintenance', content: '', concepts: [] },
-      { id: 'occurrences', title: 'Occurrences', content: '', concepts: [] },
-      { id: 'flight-plans', title: 'Flight Plans and Itineraries', content: '', concepts: [] },
-      { id: 'aeromedical-2', title: 'Aeromedical 2', content: '', concepts: [] },
-      { id: 'aeromedical-3', title: 'Aeromedical 3', content: '', concepts: [] }
+      {
+        id: 'rules-air',
+        title: 'Rules of the Air',
+        content: '',
+        concepts: [],
+        image: ''
+      },
+      {
+        id: 'maintenance-occurrences',
+        title: 'Maintenance and Aircraft Occurrences',
+        content: '',
+        concepts: [],
+        image: ''
+      },
+      {
+        id: 'flight-plans',
+        title: 'Flight Plans and Itineraries',
+        content: '',
+        concepts: [],
+        image: ''
+      }
     ]
   },
   {
-    id: 'week-5',
-    title: 'Week 5: Flight Controls & Meteorology 1',
+    id: 'module-5',
+    title: 'Flight Controls & Stability',
     sublessons: [
-      { id: 'stability', title: 'Stability', content: '', concepts: [] },
-      { id: 'secondary-controls', title: 'Secondary Controls and Effects', content: '', concepts: [] },
-      { id: 'intro-meteorology-a', title: 'Intro to Meteorology (Part A)', content: '', concepts: [] }
+      {
+        id: 'aircraft-stability',
+        title: 'Aircraft Stability',
+        content: '',
+        concepts: [],
+        image: ''
+      },
+      {
+        id: 'flight-controls',
+        title: 'Primary and Secondary Flight Controls',
+        content: '',
+        concepts: [],
+        image: ''
+      }
     ]
   },
   {
-    id: 'week-6',
-    title: 'Week 6: Stalls & Meteorology 2',
+    id: 'module-6',
+    title: 'Critical Flight Dynamics',
     sublessons: [
-      { id: 'stalls', title: 'Stalls', content: '', concepts: [] },
-      { id: 'spins-spirals', title: 'Spins, Spiral Dives and Slips', content: '', concepts: [] },
-      { id: 'intro-meteorology-b', title: 'Intro to Meteorology (Part B)', content: '', concepts: [] },
-      { id: 'stability-air', title: 'Stability of the Air', content: '', concepts: [] }
+      {
+        id: 'stalls',
+        title: 'Stalls',
+        content: '',
+        concepts: [],
+        image: ''
+      },
+      {
+        id: 'spins-dives-slips',
+        title: 'Spins, Spiral Dives, and Slips',
+        content: '',
+        concepts: [],
+        image: ''
+      }
     ]
   },
   {
-    id: 'week-7',
-    title: 'Week 7: Weather Phenomena',
+    id: 'module-7',
+    title: 'Meteorology Fundamentals',
     sublessons: [
-      { id: 'clouds-obstructions', title: 'Clouds and Obstructions to Visibility', content: '', concepts: [] },
-      { id: 'winds-masses', title: 'Winds and Air Masses', content: '', concepts: [] },
-      { id: 'fronts-weather', title: 'Fronts and Extreme Weather', content: '', concepts: [] }
+      {
+        id: 'intro-meteorology',
+        title: 'Introduction to Meteorology',
+        content: '',
+        concepts: [],
+        image: ''
+      },
+      {
+        id: 'stability-air',
+        title: 'Stability of the Air',
+        content: '',
+        concepts: [],
+        image: ''
+      },
+      {
+        id: 'clouds-visibility',
+        title: 'Clouds and Obstructions to Visibility',
+        content: '',
+        concepts: [],
+        image: ''
+      },
+      {
+        id: 'winds-air-masses',
+        title: 'Winds and Air Masses',
+        content: '',
+        concepts: [],
+        image: ''
+      },
+      {
+        id: 'fronts-weather',
+        title: 'Fronts and Extreme Weather',
+        content: '',
+        concepts: [],
+        image: ''
+      }
     ]
   },
   {
-    id: 'week-8',
-    title: 'Week 8: Weather Reports',
+    id: 'module-8',
+    title: 'Aviation Weather Services',
     sublessons: [
-      { id: 'awos', title: 'AWOS', content: '', concepts: [] },
-      { id: 'metars', title: 'METARs', content: '', concepts: [] },
-      { id: 'tafs', title: 'TAFs', content: '', concepts: [] },
-      { id: 'gfas', title: 'GFAs', content: '', concepts: [] },
-      { id: 'upper-winds', title: 'Upper Winds and CFPS Charts', content: '', concepts: [] }
+      {
+        id: 'awos-metars-tafs',
+        title: 'AWOS, METARs, and TAFs',
+        content: '',
+        concepts: [],
+        image: ''
+      },
+      {
+        id: 'gfas-charts',
+        title: 'GFAs, Upper Winds, and CFPS Charts',
+        content: '',
+        concepts: [],
+        image: ''
+      }
     ]
   },
   {
-    id: 'week-9',
-    title: 'Week 9: Navigation & Instruments',
+    id: 'module-9',
+    title: 'Navigation & Instruments',
     sublessons: [
-      { id: 'compass', title: 'The Compass', content: '', concepts: [] },
-      { id: 'pitot-static', title: 'Pitot-Static Instruments', content: '', concepts: [] },
-      { id: 'intro-navigation', title: 'Intro to Navigation', content: '', concepts: [] },
-      { id: 'charts-1', title: 'Using Charts Part 1', content: '', concepts: [] }
-    ]
-  },
-  {
-    id: 'week-10',
-    title: 'Week 10: Comprehensive Review',
-    sublessons: [
-      { id: 'comprehensive-review', title: 'Comprehensive Review', content: '', concepts: [] }
+      {
+        id: 'magnetic-compass',
+        title: 'The Magnetic Compass',
+        content: '',
+        concepts: [],
+        image: ''
+      },
+      {
+        id: 'pitot-static',
+        title: 'Pitot-Static Instruments',
+        content: '',
+        concepts: [],
+        image: ''
+      },
+      {
+        id: 'navigation-charts',
+        title: 'Introduction to Navigation & Chart Usage',
+        content: '',
+        concepts: [],
+        image: ''
+      }
     ]
   }
 ]
@@ -262,6 +413,19 @@ function renderLesson() {
   const sublesson = week.sublessons[appState.currentSublessonIndex]
 
   getElementByIdSafe('lesson-title').textContent = sublesson.title
+
+  const lessonImageContainer = getElementByIdSafe('lesson-image-container')
+  if (lessonImageContainer) {
+    lessonImageContainer.innerHTML = ''
+    if (sublesson.image) {
+      const img = document.createElement('img')
+      img.src = sublesson.image
+      img.alt = sublesson.title
+      img.className = 'lesson-image'
+      lessonImageContainer.appendChild(img)
+    }
+  }
+
   getElementByIdSafe('lesson-text').textContent = sublesson.content
 
   const conceptsList = getElementByIdSafe('concepts-list')
