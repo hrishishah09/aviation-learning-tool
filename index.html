@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aviation Ground School Trainer</title>
+    <title>Aviation Ground School</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -11,88 +11,82 @@
       <header class="header">
         <div class="header-content">
           <h1 class="app-title">Aviation Ground School</h1>
-          <p class="app-subtitle">Learn the fundamentals of flight</p>
+          <p class="app-subtitle">Your independent guide to mastering the fundamentals of flight</p>
         </div>
-        <nav class="nav-tabs">
-          <button class="nav-btn active" data-section="learn">Learn</button>
-          <button class="nav-btn" data-section="practice">Practice</button>
-        </nav>
       </header>
 
       <main class="main-content">
-
-        <section id="learn-section" class="section active">
-          <div class="section-header">
-            <h2>Ground School Curriculum</h2>
-            <p class="section-description">Learn the fundamentals of aviation and flight dynamics</p>
-          </div>
-
-          <div class="lessons-container">
-            <div class="lessons-list" id="lessons-list">
-            </div>
-
-            <div class="lesson-detail" id="lesson-detail">
-              <div class="lesson-content">
-                <h3 id="lesson-title"></h3>
-                <div id="lesson-image-container" class="lesson-image-container"></div>
-                <div id="lesson-text" class="lesson-text"></div>
-                <div class="concepts-box">
-                  <h4>Key Concepts</h4>
-                  <ul id="concepts-list" class="concepts-list"></ul>
-                </div>
-              </div>
-              <div class="lesson-nav">
-                <button id="prev-lesson-btn" class="nav-btn-secondary">Previous</button>
-                <span id="lesson-counter" class="lesson-counter"></span>
-                <button id="next-lesson-btn" class="nav-btn-secondary">Next</button>
-              </div>
-            </div>
+        <section class="hero-section">
+          <div class="hero-content">
+            <h2>Welcome to Aviation Ground School</h2>
+            <p>A professional, independent curriculum covering all essential topics for aspiring pilots. Start your journey with any module below.</p>
           </div>
         </section>
 
-        <section id="practice-section" class="section">
-          <div class="section-header">
-            <h2>Flight Scenarios</h2>
-            <p class="section-description">Apply what you've learned by making decisions in realistic flight situations</p>
-          </div>
-
-          <div class="practice-container">
-            <div class="score-box">
-              <span class="score-label">Score:</span>
-              <span id="score-display" class="score-value">0 / 0</span>
-              <button id="reset-score-btn" class="reset-btn">Reset</button>
+        <section class="modules-section">
+          <div class="modules-grid">
+            <div class="module-card">
+              <h3>Foundations of Aviation</h3>
+              <p>Introduction to air law, terminology, aircraft anatomy, and theory of flight.</p>
+              <a href="module1.html" class="module-btn">Start Module</a>
             </div>
 
-            <div class="scenario-container" id="scenario-container">
-              <div class="scenario-header">
-                <h3 id="scenario-title"></h3>
-                <span id="related-lesson" class="related-lesson"></span>
-              </div>
-
-              <div class="scenario-situation">
-                <p id="situation-text"></p>
-              </div>
-
-              <div class="choices-container" id="choices-container">
-              </div>
-
-              <div id="feedback-container" class="feedback-container hidden">
-                <div class="feedback-box">
-                  <div id="feedback-result" class="feedback-result"></div>
-                  <div id="feedback-text" class="feedback-text"></div>
-                </div>
-                <button id="next-scenario-btn" class="nav-btn-secondary">Next Scenario</button>
-              </div>
+            <div class="module-card">
+              <h3>Advanced Air Law & Aerodynamics</h3>
+              <p>Licensing, documentation, aerodromes, physical laws, and lift dynamics.</p>
+              <a href="module2.html" class="module-btn">Start Module</a>
             </div>
 
-            <div class="scenario-nav">
-              <span id="scenario-counter" class="scenario-counter"></span>
+            <div class="module-card">
+              <h3>Airspace & Pilot Health</h3>
+              <p>Aerodromes, VFR conditions, airspace regulations, and aviation medicine.</p>
+              <a href="module3.html" class="module-btn">Start Module</a>
+            </div>
+
+            <div class="module-card">
+              <h3>Procedures & Operations</h3>
+              <p>Rules of the air, maintenance, aircraft occurrences, and flight planning.</p>
+              <a href="module4.html" class="module-btn">Start Module</a>
+            </div>
+
+            <div class="module-card">
+              <h3>Flight Controls & Stability</h3>
+              <p>Aircraft stability and primary and secondary flight control systems.</p>
+              <a href="module5.html" class="module-btn">Start Module</a>
+            </div>
+
+            <div class="module-card">
+              <h3>Critical Flight Dynamics</h3>
+              <p>Understanding stalls, spins, spiral dives, and slip maneuvers.</p>
+              <a href="module6.html" class="module-btn">Start Module</a>
+            </div>
+
+            <div class="module-card">
+              <h3>Meteorology Fundamentals</h3>
+              <p>Weather systems, air stability, clouds, winds, and extreme weather.</p>
+              <a href="module7.html" class="module-btn">Start Module</a>
+            </div>
+
+            <div class="module-card">
+              <h3>Aviation Weather Services</h3>
+              <p>AWOS, METARs, TAFs, GFAs, upper winds, and flight planning charts.</p>
+              <a href="module8.html" class="module-btn">Start Module</a>
+            </div>
+
+            <div class="module-card">
+              <h3>Navigation & Instruments</h3>
+              <p>Magnetic compass, pitot-static instruments, navigation, and chart usage.</p>
+              <a href="module9.html" class="module-btn">Start Module</a>
             </div>
           </div>
         </section>
       </main>
+
+      <footer class="footer">
+        <p>Aviation Ground School &mdash; Professional Independent Curriculum</p>
+      </footer>
     </div>
 
-    <script type="module" src="main.js"></script>
+    <script type="module" src="home.js"></script>
   </body>
 </html>

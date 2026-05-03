@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 1 - Foundations of Aviation</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="module1.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="header">
+        <div class="header-content">
+          <div class="header-top">
+            <a href="index.html" class="back-btn">← Back to Dashboard</a>
+            <h1 class="app-title">Foundations of Aviation</h1>
+          </div>
+          <p class="app-subtitle">Module 1 - Essential Aviation Fundamentals</p>
+        </div>
+      </header>
+
+      <main class="main-content">
+        <div class="module-container">
+          <aside class="module-sidebar">
+            <nav class="lessons-nav" id="lessons-nav">
+            </nav>
+          </aside>
+
+          <div class="module-content">
+            <div class="lesson-card">
+              <h2 id="lesson-title"></h2>
+              <div id="lesson-image-container" class="lesson-image-container"></div>
+              <div id="lesson-text" class="lesson-text"></div>
+              <div class="concepts-box">
+                <h3>Key Concepts</h3>
+                <ul id="concepts-list" class="concepts-list"></ul>
+              </div>
+            </div>
+
+            <div class="lesson-navigation">
+              <button id="prev-btn" class="nav-btn-secondary">Previous</button>
+              <span id="lesson-counter" class="lesson-counter"></span>
+              <button id="next-btn" class="nav-btn-secondary">Next</button>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <p>Aviation Ground School &mdash; Professional Independent Curriculum</p>
+      </footer>
+    </div>
+
+    <script type="module" src="module1.js"></script>
+  </body>
+</html>
